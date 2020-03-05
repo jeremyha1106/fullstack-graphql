@@ -30,9 +30,10 @@ type User {
 type Link {
   id: ID!
   description: String!
+  createdAt: String!
   url: String!
   postedBy: User
-  votes: [Vote!]!
+  votes: [Vote!]
 }
 
 type Subscription {
